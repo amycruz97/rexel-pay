@@ -154,13 +154,14 @@ body {
 
 .border {
     /* background-color: red; */
-    width: 500px;
+    width: 550px;
     height: 800px;
+    margin-left: 50px;
 }
 
 .border-2 {
-    width: 555px;
-    height: 508px;
+    width: 600px;
+    height: 550px;
     border-radius: 4px;
     box-shadow: 0 5px 10px 1px rgba(55, 127, 247, 0.1);
     background-color: #ffffff;
@@ -177,40 +178,9 @@ body {
     letter-spacing: -0.75px;
 }
 
-.what-you-send {
-    background-color: #fbfcfe;
-    width: 499px;
-    /* height: 82px; */
-    border-radius: 2px;
-    border: solid 1px #ecf3fe;
-    margin: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-}
 
-.what-you-send .img-dropdown {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-left: #ecf3fe solid 1px;
-    padding-left: 5px;
-}
 
-.what-you-send p {
-    color: red;
-    display: flex;
-    align-items: flex-start;
-    padding-left: 20px;
-}
 
-.vertical-line {
-    border-right: 6px solid green;
-    height: 100px;
-}
 
 .border p {
     font-family: PublicSans;
@@ -245,6 +215,76 @@ body {
     line-height: 1.47;
     letter-spacing: -0.27px;
 }
+
+.what-you-send {
+    background-color: #fbfcfe;
+    border-radius: 2px;
+    border: solid 1px #ecf3fe;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.what-you-send .img-dropdown {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-left: #ecf3fe solid 1px;
+    padding-left: 10px;
+}
+
+.what-you-send p {
+    color: #050c17;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.converter{
+    background-color: #fbfcfe;
+    margin: 20px;
+  
+    
+    
+}
+
+.you-send{
+    display: flex;
+    flex-direction: row ;
+
+}
+
+.you-send .send{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    
+}
+
+.you-send .rate{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: flex-end;
+
+}
+
+.border-2 button{
+     width: 467px;
+        height: 48px;
+        border-radius: 2px;
+        box-shadow: 0 2px 24px 3px rgba(55, 127, 247, 0.15);
+        background-color: #377ff7;
+        margin-left: 70px;
+        color: #fff;
+      }
+
 
 
 /* HOW REXELPAY WORKS */
