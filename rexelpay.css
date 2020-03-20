@@ -6,28 +6,39 @@
         margin: 0;
         font-family: 'Public Sans', sans-serif;
     }
-    
+    /*     
     html,
     * {
         font-family: 'Public Sans', sans-serif;
-    }
+    } */
     
     body {
         font-family: 'Public Sans', sans-serif;
+        /* overflow: hidden; */
+    }
+    
+    @media only screen and (max-width: 768px) {
+        body {
+            /* background-color: red; */
+            /* overflow: hidden; */
+        }
     }
     
     .Navbar {
         background-color: #fbfcfe;
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         padding: 16px;
-        font-family: sans-serif;
+        font-family: 'Public Sans', sans-serif;
         color: #050c17;
-        font-size: 30x;
+        font-size: 13px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.46;
         letter-spacing: 0.5px;
+        margin-right: 80px;
     }
     
     .Navbar a {
@@ -36,7 +47,7 @@
     }
     
     .Navbar__Link {
-        padding-right: 8px;
+        padding-right: 20px;
     }
     
     .Navbar__Items {
@@ -51,7 +62,7 @@
         display: none;
     }
     
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 900px) {
         .Navbar__Items,
         .Navbar {
             flex-direction: column;
@@ -117,8 +128,7 @@
     /* BODY */
     
     .body {
-        /* background-color: #fbfcfe; */
-        background-color: red;
+        background-color: #fbfcfe;
     }
     
     .body-img,
@@ -144,22 +154,43 @@
         }
     }
     
+    @media only screen and (max-width: 768px) {
+        .border {
+            padding: 50px;
+        }
+        .border-2 {
+            margin-top: 30px;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .save-over img {
+            display: none;
+        }
+        .save-over p {
+            /* background-color: red; */
+            margin-top: 5px;
+            margin-bottom: 100px;
+            text-align: center;
+        }
+    }
+    
     .borderless-transfer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        flex-wrap: wrap;
+        overflow: hidden;
     }
     
     .border {
         /* background-color: red; */
-        width: 550px;
-        height: 800px;
-        margin-left: 50px;
+        /* width: 550px; */
+        /* height: 800px; */
+        /* margin-left: 50px; */
     }
     
     .border-2 {
-        width: 600px;
-        height: 550px;
         border-radius: 4px;
         box-shadow: 0 5px 10px 1px rgba(55, 127, 247, 0.1);
         background-color: #ffffff;
@@ -167,7 +198,7 @@
     
     .border h2 {
         color: #050c17;
-        font-family: PublicSans;
+        font-family: 'PublicSans', sans-serif;
         font-size: 37px;
         font-weight: bold;
         font-stretch: normal;
@@ -177,7 +208,7 @@
     }
     
     .border p {
-        font-family: PublicSans;
+        /* font-family: 'PublicSans', sans-serif; */
         font-size: 17px;
         font-weight: normal;
         font-stretch: normal;
@@ -209,10 +240,11 @@
     }
     
     .cards {
+        width: 450px;
         background-color: #fff;
         border: 1px solid #f0f4fa;
         border-radius: 4px;
-        padding: 5px;
+        padding: 1px;
         margin-top: 10px;
     }
     
@@ -270,21 +302,31 @@
     }
     
     .border-2 button {
-        width: 467px;
-        height: 48px;
         border-radius: 2px;
         box-shadow: 0 2px 24px 3px rgba(55, 127, 247, 0.15);
         background-color: #377ff7;
         margin-left: 70px;
         color: #fff;
+        margin-bottom: 50px;
+        padding: 20px 170px;
     }
     /* HOW REXELPAY WORKS */
     
     .how-it-works {
-        background-image: url(./image/rectangle-copy.png);
+        /* background-color: red; */
+        background-image: url(./image/rectangle-copy@2x.png);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 800px;
+        margin-top: -40px;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .how-it-works {
+            background-color: red;
+            background-image: url(./image/rectangle-copy.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
     
     .how-rexelpay-works h3 {
@@ -300,6 +342,13 @@
     }
     
     .how-rexelpay-works p {
+        font-family: 'Public Sans', sans-serif;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.47;
+        letter-spacing: -0.27px;
         text-align: center;
         color: #fff;
     }
@@ -320,8 +369,10 @@
     
     .rexel-pay-for .mto button {
         border-radius: 24px;
+        border: 1px solid #1ac086;
         background-color: #1ac086;
         padding: 15px;
+        color: #fff;
     }
     
     .group-icon {
@@ -339,10 +390,27 @@
         width: 50%;
     }
     
-    .group-icon h4,
-    p {
+    .group-icon h4 {
         color: #fff;
         text-align: center;
+        font-family: 'Public Sans', sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 1.46;
+        letter-spacing: -0.29px;
+    }
+    
+    .group-icon p {
+        font-size: 13px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.46;
+        letter-spacing: -0.29px;
+        font-family: 'Public Sans', sans-serif;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 80px;
     }
     /* INTERNATIONAL BUSINESS */
     
@@ -369,7 +437,7 @@
     }
     
     .rexel-for-business h3 {
-        font-family: PublicSans;
+        font-family: 'Public Sans', sans-serif;
         font-size: 37px;
         font-weight: bold;
         font-stretch: normal;
@@ -406,25 +474,36 @@
     }
     
     .money-transfer-organization {
-        clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0 100%);
-        background-color: lawngreen;
-        background-position: left;
-        height: 500px;
-        width: 900px;
         margin-top: 80px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        position: relative;
+    }
+    
+    .money-transfer-organization-clip-path {
+        clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0 100%);
+        background-color: #fff;
+        height: 600px;
+        width: 100%;
+        position: absolute;
+        left: 400px;
+        z-index: 10;
     }
     
     .money-transfer-organization-img img {
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        position: relative;
+        left: 50px;
+        z-index: 10;
     }
     
     .seemless-payout {
-        margin-left: 70px;
+        margin-left: 50px;
         margin-top: 130px;
+        position: relative;
+        z-index: 10;
     }
     
     .seemless-payout h3 {
@@ -448,7 +527,9 @@
     }
     
     .money-transfer-organization-pattern {
-        margin-top: 500px;
+        margin-top: 350px;
+        position: relative;
+        z-index: 10;
     }
     
     .partners {
@@ -460,8 +541,9 @@
     .partners-logo {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
+        padding-right: 0px;
     }
     
     .partners-logo img,
@@ -473,13 +555,13 @@
     .partners p {
         color: #050c17;
         margin-bottom: 50px;
+        text-align: center;
     }
     /* FOOTER */
     
     #footer {
         background: #377ff7;
-        width: 100%;
-        height: 400px;
+        padding-bottom: 100px;
     }
     
     .footer-details {
@@ -515,7 +597,6 @@
     ul {
         margin-bottom: 16px;
         list-style-type: none;
-        font-family: PublicSans;
         font-size: 14px;
         font-weight: normal;
         font-stretch: normal;
@@ -537,7 +618,6 @@
     ul {
         margin-bottom: 16px;
         list-style-type: none;
-        font-family: PublicSans;
         font-size: 14px;
         font-weight: normal;
         font-stretch: normal;
@@ -578,13 +658,13 @@
     .copyright p {
         color: #fff;
         display: block;
-        margin-right: 630px;
+        margin-left: 320px;
     }
     
     .copyright hr {
         display: block;
-        width: 700px;
-        margin-right: 390px;
+        /* width: 700px; */
+        margin-left: 310px;
     }
     
     .copyright small {
