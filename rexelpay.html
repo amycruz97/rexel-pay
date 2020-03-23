@@ -28,9 +28,9 @@
 
             <div class="dropdown Navbar__Link">
                 <a href="#" class="dropbtn" style="font-size: 13px;">
-            Money transfer
-            <i class="fa fa-caret-down"></i>
-          </a>
+                    Money transfer
+                    <i class="fa fa-caret-down"></i>
+                 </a>
                 <div class="dropdown-content">
                     <a href="#">Rexel for individual</a>
                     <a href="#">Rexel for businesses</a>
@@ -101,29 +101,110 @@
 
             <div class="border-2">
                 <div class="what-you-send">
+
                     <div style="flex-grow: 2;">
                         <p>What you send</p>
                         <p style="margin-top: 10px;">5,000.00</p>
                     </div>
 
-                    <div class="img-dropdown">
-                        <img src="./image/usa.png" alt="usa-flag" />
-                        <p style="margin-left: -60px;">USD</p>
+
+
+                    <div class="img-dropdown" id="img-dropdown" onclick="currency()">
+                        <img src="./image/usa.png" alt="usa-flag" id="select-img" />
+                        <p style="margin-left: -60px;" id="select-currency">USD</p>
                         <i class="fas fa-chevron-down" style="margin-left: -40px;"></i>
                     </div>
+
+
                 </div>
 
+                <div class="select-img" id="select">
+
+                    <ul style="list-style-type: none;">
+                        <li data-curid="1" onclick="myFunc(this)">
+                            <img src="./image/usa.png" alt="usa" style="width:37px; height: 40px;">
+                            <p>USD</p>
+                            <p>United state dollars</p>
+
+                        </li>
+                        <li data-curid="2" onclick="myFunc(this)">
+                            <img src="./image/nigeria.png" alt="nigeria" style="width:37px; height: 40px;">
+                            <p>NGN</p>
+                            <p>Nigeria Naira </p>
+
+                        </li>
+                        <li data-curid="3" onclick="myFunc(this)">
+                            <img src="./image/bristish flag.png" alt="nigeria" style="width:37px; height: 40px;">
+                            <p>GBP</p>
+                            <p>British pounds </p>
+                        </li>
+                        <li data-curid="4" onclick="myFunc(this)">
+                            <img src="./image/ghana.jpeg" alt="" style="width:37px; height: 40px;">
+                            <p>GHS</p>
+                            <p>Ghana cedis</p>
+                        </li>
+                        <li data-curid="5" onclick="myFunc(this)">
+                            <img src="./image/canada.jpeg" alt="" style="width:37px; height: 40px;">
+                            <p>CAD</p>
+                            <p>Canada dollars </p>
+                        </li>
+                    </ul>
+
+                </div>
+
+
                 <div class="what-you-send">
+
                     <div style="flex-grow: 2;">
                         <p>What your recipient gets</p>
                         <p style="margin-top: 10px;">1,800,000.00</p>
                     </div>
 
-                    <div class="img-dropdown">
-                        <img src="./image/nigeria.png" alt="nigeria-flag" />
-                        <p style="margin-left: -50px;">USD</p>
+
+
+                    <div class="img-dropdown" id="img-dropdown" onclick="currencies()">
+                        <img src="./image/nigeria.png" alt="nigeria-flag" id="select-imgs" />
+                        <p style="margin-left: -60px;" id="select-currencies">NGN</p>
                         <i class="fas fa-chevron-down" style="margin-left: -40px;"></i>
                     </div>
+
+                </div>
+
+
+                <div class="select-img" id="selects">
+
+                    <ul style="list-style-type: none;">
+                        <li data-curid="1" onclick="myFunct(this)">
+                            <img src="./image/nigeria.png" alt="nigeria" style="width:37px; height: 40px;">
+                            <p>NGN</p>
+                            <p>Nigeria Naira </p>
+
+
+                        </li>
+                        <li data-curid="2" onclick="myFunct(this)">
+                            <img src="./image/usa.png" alt="usa" style="width:37px; height: 40px;">
+                            <p>USD</p>
+                            <p>United state dollars</p>
+
+
+                        </li>
+                        <li data-curid="3" onclick="myFunct(this)">
+                            <img src="./image/bristish flag.png" alt="nigeria" style="width:37px; height: 40px;">
+                            <p>GBP</p>
+                            <p>British pounds </p>
+                        </li>
+                        <li data-curid="4" onclick="myFunct(this)">
+                            <img src="./image/ghana.jpeg" alt="" style="width:37px; height: 40px;">
+                            <p>GHS</p>
+                            <p>Ghana cedis</p>
+                        </li>
+                        <li data-curid="5" onclick="myFunct(this)">
+                            <img src="./image/canada.jpeg" alt="" style="width:37px; height: 40px;">
+                            <p>CAD</p>
+                            <p>Canada dollars </p>
+                        </li>
+                    </ul>
+
                 </div>
 
                 <div class="converter">

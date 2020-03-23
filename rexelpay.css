@@ -276,6 +276,30 @@
         padding-left: 20px;
     }
     
+    .select-img {
+        box-shadow: 0 5px 10px 1px rgba(55, 127, 247, 0.1);
+        background-color: #ffffff;
+        border-radius: 2px;
+        display: none;
+        padding: 10px;
+        margin: 20px;
+    }
+    
+    .select-img li {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    .select-img p {
+        display: block;
+        padding: 0 10px;
+    }
+    
+    .select-img img {
+        margin-bottom: 10px;
+    }
+    
     .converter {
         background-color: #fbfcfe;
         margin: 20px;
@@ -450,7 +474,6 @@
     
     .rexel-for-business p {
         display: block;
-        font-family: PublicSans;
         font-size: 17px;
         font-weight: normal;
         font-stretch: normal;
